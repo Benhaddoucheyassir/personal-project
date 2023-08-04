@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management system</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@500&family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="home" id="home">
+        <nav>
+            <h2>yassir <span>.BEN</span></h2>
+            <ul>
+                <li><a href="home"> Home</a></li>
+                <li><a href="home"> About Me</a></li>
+                <li><a href="home"> Services</a></li>
+                <li><a href="home"> Skills</a></li>
+                <li><a href="home"> Contact Me</a></li>
+            </ul>
+            <a href="#" > <button>HIRE ME</button></a>
+        </nav>
+        <div class="content">
+            <div class="container-texts">
+                <h4>Université ibn Tofail,ENSA,Kenitra</h4>
+                <h1>An amazing <span>Event</span> <br> begins with us.
+                </h1>
+                <h3>Click to see upcoming<span> Events</span></h3>
+                <a href="#"> <button>Planning</button></a>
+            
+        </div>
+        </div>
+     </section>
+     <section class="countdown">
+        <div class="container-texts">
+            <h5>upcoming Event Date</h5>
+            <h3>Count Every Second <br>
+                Until the Event</h3>
+        </div>
+        <div class="lunch-time">
+            <div>
+                <p id="days">00</p>
+                <span>Days</span>
+            </div>
+            <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+            </div>
+            <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+            </div>
+            <div>
+                <p id="seconds">00</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+     </section>
+     <script>
+        var countdownDate= new Date("oct 16,2023,00:00:00").getTime();
+        var x = setInterval(function(){
+            var now=new Date().getTime();
+            var distance=countdownDate-now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById("days").innerHTML = days
+document.getElementById("hours").innerHTML = hours
+document.getElementById("minutes").innerHTML = minutes
+document.getElementById("seconds").innerHTML = seconds
+        },1000);
+     </script>
+     
+     <section class="clubs">
+        <h1 class="text-align">ENSAK <span>Clubs</span></h1>
+       <div class="image-container">
+        <img src="images/Design sans titre (2).png">
+        <img src="images/Design sans titre (2).png">
+        <img src="images/Design sans titre (2).png">
+        <img src="images/Design sans titre (2).png">
+        <img src="images/Design sans titre (2).png">
+        <img src="images/Design sans titre (2).png">
+        <img src="images/Design sans titre (2).png">
+        <img src="images/Design sans titre (2).png">
+       </div>
+     </section>
+     
+</body>
+</html>

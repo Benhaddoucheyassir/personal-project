@@ -1,0 +1,136 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins',sans-serif;}
+.container{
+    width: 100%;
+    height: 100vh;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+justify-content: center;
+background-color: white;
+
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    color: black;
+    border-radius:  6px;
+    justify-content: space-between;
+    box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+
+}
+.container .pagination ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+ .link{
+    
+    background:white;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight:500;
+    line-height: 45px;
+    cursor:pointer;
+    text-align: center;
+     padding-right:80px;
+     padding-left:80px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+    border-right: 1px solid #e7e7e8;
+    cursor: pointer;
+}
+.active {
+    background-image: linear-gradient(120deg, #ee8425 0%, #f9488b 100%), linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+    background-repeat: no-repeat;
+    color: white;
+}
+.active p{
+    color: white;
+}
+
+h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+    line-height: 1.2;
+}
+p{
+font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+    color: #6a6b7c;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+}
+.contents{ padding-right:150px ;
+    padding-left: 150px;
+    padding-bottom:40px ;
+    padding-top: 40px;
+    background-color: white;
+    margin-bottom: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(235, 235, 235);
+    border-image: initial;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+}
+.contents:hover{
+    box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(235, 235, 235);
+}
+.box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    border-radius:  6px;
+    justify-content: space-evenly;
+}
+.left{   margin-right: 120px;
+}
+.middle{
+    margin-right: 120px;
+}
+.left img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+
+}
+h4{
+    color: #171822;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.contents .box .middle ul li{
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(106, 107, 124);
+    margin-right: 25px;
+    position: relative;
+    list-style: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: none;
+}
+.contents .box .middle ul li i {
+    color: rgb(244, 73, 73);
+    font-size: 14px;
+}
+.contents .box .right ul li {
+    font-size: 16px;
+    color: rgb(106, 107, 124);
+    line-height: 32px;
+    position: relative;
+    padding-left: 22px;
+    list-style: none;
+}
